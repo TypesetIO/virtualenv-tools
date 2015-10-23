@@ -166,8 +166,8 @@ def update_paths(base, new_path):
         print 'error: %s is not an absolute path' % new_path
         return False
 
-    bin_dir = os.path.join(base, 'bin')
-    base_lib_dir = os.path.join(base, 'lib')
+    bin_dir = os.path.join(new_path, 'bin')
+    base_lib_dir = os.path.join(new_path, 'lib')
     lib_dir = None
     lib_name = None
 
